@@ -52,6 +52,7 @@
 			this.panel_graphic.Name = "panel_graphic";
 			this.panel_graphic.Size = new System.Drawing.Size(775, 512);
 			this.panel_graphic.TabIndex = 0;
+			this.panel_graphic.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_graphic_Paint);
 			// 
 			// button_draw
 			// 
