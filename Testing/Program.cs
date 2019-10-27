@@ -1,8 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿#region Usings
+using System;
 using System.Windows.Forms;
+#endregion Usings
+
+
 
 namespace Testing
 {
@@ -16,7 +17,7 @@ namespace Testing
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new LineGraphic());
+			Application.Run(new Launcher());
 		}
 	}
 }

@@ -7,9 +7,9 @@ using System.Windows.Forms;
 
 
 
-namespace Testing
+namespace Testing.LineGraph
 {
-	public partial class LineGraphic : Form
+	public partial class LineGraphConcept : Form
 	{
 		Graphics panelGraphics;
 
@@ -17,7 +17,7 @@ namespace Testing
 
 
 
-		public LineGraphic()
+		public LineGraphConcept()
 		{
 			InitializeComponent();
 

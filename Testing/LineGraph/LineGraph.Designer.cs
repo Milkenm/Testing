@@ -1,4 +1,4 @@
-﻿namespace Testing
+﻿namespace Testing.LineGraph
 {
 	partial class LineGraph
 	{
@@ -28,7 +28,6 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
 			this.SuspendLayout();
 			// 
 			// LineGraph
@@ -37,12 +36,11 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.Name = "LineGraph";
 			this.Size = new System.Drawing.Size(200, 100);
+			this.Paint += new System.Windows.Forms.PaintEventHandler(this.LineGraph_Paint);
 			this.ResumeLayout(false);
 
 		}
 
 		#endregion
-
-		private System.ComponentModel.BackgroundWorker backgroundWorker1;
 	}
 }

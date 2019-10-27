@@ -1,6 +1,6 @@
-﻿namespace Testing
+﻿namespace Testing.LineGraph
 {
-	partial class LineGraphic
+	partial class LineGraphConcept
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -182,7 +182,7 @@
 			this.button_drawTest.UseVisualStyleBackColor = false;
 			this.button_drawTest.Click += new System.EventHandler(this.button_drawTest_Click);
 			// 
-			// LineGraphic
+			// LineGraphConcept
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -199,7 +199,8 @@
 			this.Controls.Add(this.numeric_lineYstart);
 			this.Controls.Add(this.numeric_lineXstart);
 			this.Controls.Add(this.panel_graphic);
-			this.Name = "LineGraphic";
+			this.Name = "LineGraphConcept";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Line Graphic";
 			((System.ComponentModel.ISupportInitialize)(this.numeric_lineXstart)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.numeric_lineYstart)).EndInit();
