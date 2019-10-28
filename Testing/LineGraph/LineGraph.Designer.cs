@@ -34,8 +34,9 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.Name = "LineGraph";
-			this.Size = new System.Drawing.Size(200, 100);
+			this.Size = new System.Drawing.Size(198, 98);
 			this.Paint += new System.Windows.Forms.PaintEventHandler(this.LineGraph_Paint);
 			this.ResumeLayout(false);
 

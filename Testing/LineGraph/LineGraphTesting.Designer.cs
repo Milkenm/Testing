@@ -30,6 +30,7 @@
 		{
 			this.button_draw = new System.Windows.Forms.Button();
 			this.lineGraph = new Testing.LineGraph.LineGraph();
+			this.button_increment = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// button_draw
@@ -50,11 +51,22 @@
 			this.lineGraph.Size = new System.Drawing.Size(200, 100);
 			this.lineGraph.TabIndex = 0;
 			// 
+			// button_increment
+			// 
+			this.button_increment.Location = new System.Drawing.Point(93, 12);
+			this.button_increment.Name = "button_increment";
+			this.button_increment.Size = new System.Drawing.Size(75, 33);
+			this.button_increment.TabIndex = 2;
+			this.button_increment.Text = "Increment";
+			this.button_increment.UseVisualStyleBackColor = true;
+			this.button_increment.Click += new System.EventHandler(this.button_increment_Click);
+			// 
 			// LineGraphTesting
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(224, 180);
+			this.Controls.Add(this.button_increment);
 			this.Controls.Add(this.button_draw);
 			this.Controls.Add(this.lineGraph);
 			this.Name = "LineGraphTesting";
@@ -68,5 +80,6 @@
 
 		private LineGraph lineGraph;
 		private System.Windows.Forms.Button button_draw;
+		private System.Windows.Forms.Button button_increment;
 	}
 }
