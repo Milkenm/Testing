@@ -13,8 +13,8 @@ namespace Testing.LineGraph
 {
 	public partial class LineGraph : UserControl
 	{
-		private static List<Line> lines = new List<Line>();
-		private static Graphics g;
+		private  List<Line> lines = new List<Line>();
+		private Graphics g;
 		private int CurrentX, CurrentY;
 
 		public LineGraph()
@@ -60,8 +60,7 @@ namespace Testing.LineGraph
 			TopLeft,
 			TopRight,
 		}
-
-
+		
 		public void DrawLine(Line line) => DrawLine(line.P, line.StartX, line.StartY, line.EndX, line.EndY, line.Position, true);
 		public void DrawLine(Line line, bool SaveLine) => DrawLine(line.P, line.StartX, line.StartY, line.EndX, line.EndY, line.Position, SaveLine);
 		public void DrawLine(Pen pen, int StartX, int StartY, int EndX, int EndY, PositionList Pos, bool SaveLine)
