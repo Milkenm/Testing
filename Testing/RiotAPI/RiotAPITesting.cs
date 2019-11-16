@@ -71,37 +71,37 @@ namespace Testing.RiotAPI
 
 		private void button_get_Click(object sender, EventArgs e)
 		{
-			set.SummonerName = textBox_summoner.Text;
+				set.SummonerName = textBox_summoner.Text;
 
-			string json = GET(FormatString());
+				string json = GET(FormatString());
 
-			if (!string.IsNullOrEmpty(json))
-			{
-				Summoner sum = JsonConvert.DeserializeObject<Summoner>(GET(FormatString()));
-
-				textBox_id.Text = sum.id;
-				textBox_accountId.Text = sum.accountId;
-				textBox_puuid.Text = sum.puuid;
-				textBox_name.Text = sum.name;
-				textBox_profileIconid.Text = sum.profileIconId;
-				textBox_revisionDate.Text = sum.revisionDate;
-				textBox_summonerLevel.Text = sum.summonerLevel;
-
-				try
+				if (!string.IsNullOrEmpty(json))
 				{
-					pictureBox_icon.Load(string.Format("https://milkenm.github.io/Diamond/Static/LoL/Icons/{0}.png", textBox_profileIconid.Text));
-				}
-				catch
-				{
-					MessageBox.Show("Icon not found.");
-				}
+					Summoner sum = JsonConvert.DeserializeObject<Summoner>(GET(FormatString()));
 
-				
-				string json2 = GET(string.Format(masteryInfo, textBox_id.Text, textBox_apiKey.Text));
-				List<Mastery> mastery = JsonConvert.DeserializeObject<List<Mastery>>(json2);
-				MessageBox.Show(mastery[0].championId, "Most Points");
-			}
-			else MessageBox.Show("Esse Summoner não foi encontrado.");
+					textBox_id.Text = sum.id;
+					textBox_accountId.Text = sum.accountId;
+					textBox_puuid.Text = sum.puuid;
+					textBox_name.Text = sum.name;
+					textBox_profileIconid.Text = sum.profileIconId;
+					textBox_revisionDate.Text = sum.revisionDate;
+					textBox_summonerLevel.Text = sum.summonerLevel;
+
+					try
+					{
+						pictureBox_icon.Load(string.Format("https://milkenm.github.io/Diamond/Static/LoL/Icons/{0}.png", textBox_profileIconid.Text));
+					}
+					catch
+					{
+						MessageBox.Show("Icon not found.");
+					}
+
+
+					string json2 = GET(string.Format(masteryInfo, textBox_id.Text, textBox_apiKey.Text));
+					List<Mastery> mastery = JsonConvert.DeserializeObject<List<Mastery>>(json2);
+					MessageBox.Show(mastery[0].championId, "Most Points");
+				}
+				else MessageBox.Show("Esse Summoner não foi encontrado.");
 		}
 
 		string FormatString()
@@ -109,19 +109,18 @@ namespace Testing.RiotAPI
 			return string.Format(sumInfo, textBox_summoner.Text.Replace(" ", "%20"), textBox_apiKey.Text);
 		}
 
+		/// <summary>Executes a GET Resquest.</summary>
+		/// <param name="url">The request URL.</param>
 		public string GET(string url)
 		{
 			HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
 
-			try
+			WebResponse response = request.GetResponse();
+			using (Stream stream = response.GetResponseStream())
 			{
-				WebResponse response = request.GetResponse();
-				using (Stream responseStream = response.GetResponseStream())
-				{
-					StreamReader reader = new StreamReader(responseStream, Encoding.UTF8);
-					return reader.ReadToEnd();
-				}
-			} catch { return null; }
+				StreamReader reader = new StreamReader(stream, Encoding.UTF8);
+				return reader.ReadToEnd();
+			}
 		}
 	}
 }
