@@ -87,7 +87,14 @@ namespace Testing.RiotAPI
 				textBox_revisionDate.Text = sum.revisionDate;
 				textBox_summonerLevel.Text = sum.summonerLevel;
 
-				//pictureBox_icon.Load(string.Format("https://milkenm.github.io/Diamond/Static/LoL/Icons/{0}.png", textBox_profileIconid.Text));
+				try
+				{
+					pictureBox_icon.Load(string.Format("https://milkenm.github.io/Diamond/Static/LoL/Icons/{0}.png", textBox_profileIconid.Text));
+				}
+				catch
+				{
+					MessageBox.Show("Icon not found.");
+				}
 
 				
 				string json2 = GET(string.Format(masteryInfo, textBox_id.Text, textBox_apiKey.Text));
