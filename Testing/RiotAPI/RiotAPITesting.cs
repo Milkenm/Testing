@@ -1,4 +1,5 @@
-﻿using System;
+﻿#region Usings
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Net;
@@ -6,6 +7,9 @@ using System.Text;
 using System.Windows.Forms;
 using Newtonsoft.Json;
 using Testing.RiotAPI.Resources;
+#endregion Usings
+
+
 
 namespace Testing.RiotAPI
 {
@@ -107,20 +111,6 @@ namespace Testing.RiotAPI
 		string FormatString()
 		{
 			return string.Format(sumInfo, textBox_summoner.Text.Replace(" ", "%20"), textBox_apiKey.Text);
-		}
-
-		/// <summary>Executes a GET Resquest.</summary>
-		/// <param name="url">The request URL.</param>
-		public string GET(string url)
-		{
-			HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
-
-			WebResponse response = request.GetResponse();
-			using (Stream stream = response.GetResponseStream())
-			{
-				StreamReader reader = new StreamReader(stream, Encoding.UTF8);
-				return reader.ReadToEnd();
-			}
 		}
 	}
 }
