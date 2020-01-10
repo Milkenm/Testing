@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Testing.RiotAPI.Resources {
+namespace Testing.Riot_API.Resources {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

@@ -32,9 +32,12 @@
 			this.button_lineGraph_testing = new System.Windows.Forms.Button();
 			this.button_lineGraph_concept = new System.Windows.Forms.Button();
 			this.groupBox_riotApi = new System.Windows.Forms.GroupBox();
-			this.button1 = new System.Windows.Forms.Button();
+			this.button_riotApi_testing = new System.Windows.Forms.Button();
+			this.groupBox_tokenDb = new System.Windows.Forms.GroupBox();
+			this.button_tokenDb_concept = new System.Windows.Forms.Button();
 			this.groupBox_lineGraph.SuspendLayout();
 			this.groupBox_riotApi.SuspendLayout();
+			this.groupBox_tokenDb.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// groupBox_lineGraph
@@ -70,7 +73,7 @@
 			// 
 			// groupBox_riotApi
 			// 
-			this.groupBox_riotApi.Controls.Add(this.button1);
+			this.groupBox_riotApi.Controls.Add(this.button_riotApi_testing);
 			this.groupBox_riotApi.Location = new System.Drawing.Point(12, 103);
 			this.groupBox_riotApi.Name = "groupBox_riotApi";
 			this.groupBox_riotApi.Size = new System.Drawing.Size(173, 54);
@@ -78,21 +81,42 @@
 			this.groupBox_riotApi.TabStop = false;
 			this.groupBox_riotApi.Text = "Riot API";
 			// 
-			// button1
+			// button_riotApi_testing
 			// 
-			this.button1.Location = new System.Drawing.Point(6, 19);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(161, 23);
-			this.button1.TabIndex = 1;
-			this.button1.Text = "Testing";
-			this.button1.UseVisualStyleBackColor = true;
-			this.button1.Click += new System.EventHandler(this.button1_Click);
+			this.button_riotApi_testing.Location = new System.Drawing.Point(6, 19);
+			this.button_riotApi_testing.Name = "button_riotApi_testing";
+			this.button_riotApi_testing.Size = new System.Drawing.Size(161, 23);
+			this.button_riotApi_testing.TabIndex = 1;
+			this.button_riotApi_testing.Text = "Testing";
+			this.button_riotApi_testing.UseVisualStyleBackColor = true;
+			this.button_riotApi_testing.Click += new System.EventHandler(this.button_riotApi_testing_Click);
+			// 
+			// groupBox_tokenDb
+			// 
+			this.groupBox_tokenDb.Controls.Add(this.button_tokenDb_concept);
+			this.groupBox_tokenDb.Location = new System.Drawing.Point(12, 163);
+			this.groupBox_tokenDb.Name = "groupBox_tokenDb";
+			this.groupBox_tokenDb.Size = new System.Drawing.Size(173, 54);
+			this.groupBox_tokenDb.TabIndex = 3;
+			this.groupBox_tokenDb.TabStop = false;
+			this.groupBox_tokenDb.Text = "Token DB";
+			// 
+			// button_tokenDb_concept
+			// 
+			this.button_tokenDb_concept.Location = new System.Drawing.Point(6, 19);
+			this.button_tokenDb_concept.Name = "button_tokenDb_concept";
+			this.button_tokenDb_concept.Size = new System.Drawing.Size(161, 23);
+			this.button_tokenDb_concept.TabIndex = 1;
+			this.button_tokenDb_concept.Text = "Concept";
+			this.button_tokenDb_concept.UseVisualStyleBackColor = true;
+			this.button_tokenDb_concept.Click += new System.EventHandler(this.button_tokenDb_concept_Click);
 			// 
 			// Launcher
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(199, 168);
+			this.ClientSize = new System.Drawing.Size(199, 227);
+			this.Controls.Add(this.groupBox_tokenDb);
 			this.Controls.Add(this.groupBox_riotApi);
 			this.Controls.Add(this.groupBox_lineGraph);
 			this.Name = "Launcher";
@@ -100,6 +124,7 @@
 			this.Text = "Launcher";
 			this.groupBox_lineGraph.ResumeLayout(false);
 			this.groupBox_riotApi.ResumeLayout(false);
+			this.groupBox_tokenDb.ResumeLayout(false);
 			this.ResumeLayout(false);
 
 		}
@@ -110,6 +135,8 @@
 		private System.Windows.Forms.Button button_lineGraph_testing;
 		private System.Windows.Forms.Button button_lineGraph_concept;
 		private System.Windows.Forms.GroupBox groupBox_riotApi;
-		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Button button_riotApi_testing;
+		private System.Windows.Forms.GroupBox groupBox_tokenDb;
+		private System.Windows.Forms.Button button_tokenDb_concept;
 	}
 }

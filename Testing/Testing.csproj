@@ -59,48 +59,54 @@
     <Compile Include="Launcher.Designer.cs">
       <DependentUpon>Launcher.cs</DependentUpon>
     </Compile>
-    <Compile Include="LineGraph\LineGraph.cs">
+    <Compile Include="Line Graph\Line Graph.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="LineGraph\LineGraph.Designer.cs">
-      <DependentUpon>LineGraph.cs</DependentUpon>
+    <Compile Include="Line Graph\Line Graph.Designer.cs">
+      <DependentUpon>Line Graph.cs</DependentUpon>
     </Compile>
-    <Compile Include="LineGraph\LineGraphConcept.cs">
+    <Compile Include="Line Graph\Line Graph Concept.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LineGraph\LineGraphConcept.Designer.cs">
-      <DependentUpon>LineGraphConcept.cs</DependentUpon>
+    <Compile Include="Line Graph\Line Graph Concept.Designer.cs">
+      <DependentUpon>Line Graph Concept.cs</DependentUpon>
     </Compile>
-    <Compile Include="LineGraph\LineGraphTesting.cs">
+    <Compile Include="Line Graph\Line Graph Testing.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LineGraph\LineGraphTesting.Designer.cs">
-      <DependentUpon>LineGraphTesting.cs</DependentUpon>
+    <Compile Include="Line Graph\Line Graph Testing.Designer.cs">
+      <DependentUpon>Line Graph Testing.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RiotAPI\RiotAPITesting.cs">
+    <Compile Include="Riot API\Riot API Testing.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RiotAPI\RiotAPITesting.Designer.cs">
-      <DependentUpon>RiotAPITesting.cs</DependentUpon>
+    <Compile Include="Riot API\Riot API Testing.Designer.cs">
+      <DependentUpon>Riot API Testing.cs</DependentUpon>
     </Compile>
-    <Compile Include="RiotAPI\Resources\Settings.Designer.cs">
+    <Compile Include="Riot API\Resources\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Token DB\Token DB Concept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Token DB\Token DB Concept.Designer.cs">
+      <DependentUpon>Token DB Concept.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Launcher.resx">
       <DependentUpon>Launcher.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LineGraph\LineGraph.resx">
-      <DependentUpon>LineGraph.cs</DependentUpon>
+    <EmbeddedResource Include="Line Graph\Line Graph.resx">
+      <DependentUpon>Line Graph.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LineGraph\LineGraphConcept.resx">
-      <DependentUpon>LineGraphConcept.cs</DependentUpon>
+    <EmbeddedResource Include="Line Graph\Line Graph Concept.resx">
+      <DependentUpon>Line Graph Concept.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LineGraph\LineGraphTesting.resx">
-      <DependentUpon>LineGraphTesting.cs</DependentUpon>
+    <EmbeddedResource Include="Line Graph\Line Graph Testing.resx">
+      <DependentUpon>Line Graph Testing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -111,8 +117,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="RiotAPI\RiotAPITesting.resx">
-      <DependentUpon>RiotAPITesting.cs</DependentUpon>
+    <EmbeddedResource Include="Riot API\Riot API Testing.resx">
+      <DependentUpon>Riot API Testing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Token DB\Token DB Concept.resx">
+      <DependentUpon>Token DB Concept.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -124,7 +133,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="RiotAPI\Resources\Settings.settings">
+    <None Include="Riot API\Resources\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
@@ -133,7 +142,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="LineGraph\Resources\Formula.png" />
+    <Content Include="Line Graph\Resources\Formula.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
