@@ -5,6 +5,7 @@ VisualStudioVersion = 15.0.28307.852
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing", "Testing\Testing.csproj", "{4E3728F6-6D49-4486-9C80-F603E9D655EB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscordRichPresence", "DiscordRichPresence\DiscordRichPresence.csproj", "{56CEDE46-28D7-41CB-813E-67D3617BD94A}"
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +16,10 @@ Global
 		{4E3728F6-6D49-4486-9C80-F603E9D655EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E3728F6-6D49-4486-9C80-F603E9D655EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E3728F6-6D49-4486-9C80-F603E9D655EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56CEDE46-28D7-41CB-813E-67D3617BD94A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56CEDE46-28D7-41CB-813E-67D3617BD94A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56CEDE46-28D7-41CB-813E-67D3617BD94A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56CEDE46-28D7-41CB-813E-67D3617BD94A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
