@@ -27,9 +27,7 @@ namespace ThousandsSeparator
 			{
 				loop = 0;
 			}
-
-			MessageBox.Show(loop.ToString());
-
+			
 			foreach (char c in num[0])
 			{
 				if (c == '.')
