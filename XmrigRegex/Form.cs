@@ -13,7 +13,7 @@ namespace XmrigRegex
 
 		private void button_test_Click(object sender, EventArgs e)
 		{
-			string[] a = label_text.Text.Remove(0, 44).Replace(" H/s", "").Replace(" max", "").Split(' ');
+			string[] a = label_text.Text.Remove(0, 44).Replace(" H/s", "").Replace(" max", "").Replace("n/a", "0.0").Split(' ');
 
 			StringBuilder sb = new StringBuilder();
 			foreach (string cut in a)
