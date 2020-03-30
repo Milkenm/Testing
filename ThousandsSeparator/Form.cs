@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 using System.Windows.Forms;
 
 namespace ThousandsSeparator
@@ -12,21 +13,43 @@ namespace ThousandsSeparator
 
 		private void button_format_Click(object sender, EventArgs e)
 		{
-			try
-			{
+			textBox_formatedNumber.Text = FormatThousand(Convert.ToDecimal(textBox_number.Text.Replace(".", ",")));
+		}
 
-				decimal number = Convert.ToDecimal(textBox_number.Text);
+		private string FormatThousand(decimal number)
+		{
+			string[] num = number.ToString().Split(',');
 
-				// n0 = 1
-				// n1 = 1.0
-				// n2 = 1.00
-				// ...
-				textBox_formatedNumber.Text = string.Format("{0:n3}", number).Replace(",", ".");
-			}
-			catch
+			StringBuilder sb = new StringBuilder();
+
+			int loop = 3 - (num[0].Length % 3);
+			if (loop == 3)
 			{
-				MessageBox.Show("ex");
+				loop = 0;
 			}
+
+			MessageBox.Show(loop.ToString());
+
+			foreach (char c in num[0])
+			{
+				if (c == '.')
+				{
+					break;
+				}
+				else if (loop != 0 && loop % 3 == 0)
+				{
+					sb.Append(',');
+				}
+				sb.Append(c);
+
+				loop++;
+			}
+			if (num.Length > 1)
+			{
+				sb.Append('.').Append(num[1]);
+			}
+
+			return sb.ToString();
 		}
 	}
 }

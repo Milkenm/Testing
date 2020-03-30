@@ -52,7 +52,7 @@
 			this.textBox_number.Name = "textBox_number";
 			this.textBox_number.Size = new System.Drawing.Size(178, 20);
 			this.textBox_number.TabIndex = 1;
-			this.textBox_number.Text = "123456789";
+			this.textBox_number.Text = "123456789.12";
 			this.textBox_number.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
 			// textBox_formatedNumber
