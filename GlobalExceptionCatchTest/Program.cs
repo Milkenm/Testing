@@ -12,8 +12,8 @@ namespace GlobalExceptionCatchTest
 		[STAThread]
 		private static void Main()
 		{
-			Application.ThreadException += (s, e) => GlobalException();
 			Application.SetUnhandledExceptionMode(UnhandledExceptionMode.CatchException);
+			Application.ThreadException += (s, e) => GlobalException();
 			AppDomain.CurrentDomain.UnhandledException += (s, e) => GlobalException();
 
 			Application.EnableVisualStyles();
@@ -24,12 +24,6 @@ namespace GlobalExceptionCatchTest
 		private static void GlobalException()
 		{
 			MessageBox.Show("Exception");
-		}
-
-		internal static async Task lmao()
-		{
-			var task = Task.Factory.StartNew(() => throw new Exception("okghndjfkn"));
-			await task;
 		}
 	}
 }
