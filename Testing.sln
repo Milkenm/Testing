@@ -17,8 +17,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DivisionTest", "DivisionTes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalExceptionCatchTest", "GlobalExceptionCatchTest\GlobalExceptionCatchTest.csproj", "{596F2004-E0AF-4D1F-8686-BD2C5FA5C393}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncTestWinForms", "AsyncTest\AsyncTestWinForms.csproj", "{959D71DC-5DA1-4557-88C5-2AA1CD6D6CF7}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncTestConsole", "AsyncTestConsole\AsyncTestConsole.csproj", "{35E9B85C-0620-48D5-8760-2DD9B20B6074}"
 EndProject
 Global
@@ -55,10 +53,6 @@ Global
 		{596F2004-E0AF-4D1F-8686-BD2C5FA5C393}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{596F2004-E0AF-4D1F-8686-BD2C5FA5C393}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{596F2004-E0AF-4D1F-8686-BD2C5FA5C393}.Release|Any CPU.Build.0 = Release|Any CPU
-		{959D71DC-5DA1-4557-88C5-2AA1CD6D6CF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{959D71DC-5DA1-4557-88C5-2AA1CD6D6CF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{959D71DC-5DA1-4557-88C5-2AA1CD6D6CF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{959D71DC-5DA1-4557-88C5-2AA1CD6D6CF7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{35E9B85C-0620-48D5-8760-2DD9B20B6074}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{35E9B85C-0620-48D5-8760-2DD9B20B6074}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35E9B85C-0620-48D5-8760-2DD9B20B6074}.Release|Any CPU.ActiveCfg = Release|Any CPU
