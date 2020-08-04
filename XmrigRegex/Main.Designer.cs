@@ -1,6 +1,6 @@
 ﻿namespace XmrigRegex
 {
-	partial class Form
+	partial class Main
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form));
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
 			this.label_text = new System.Windows.Forms.Label();
 			this.button_test = new System.Windows.Forms.Button();
 			this.SuspendLayout();

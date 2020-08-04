@@ -3,9 +3,9 @@ using static System.Windows.Forms.ListBox;
 
 namespace DivisionTest
 {
-	public partial class Form : System.Windows.Forms.Form
+	public partial class Main : System.Windows.Forms.Form
 	{
-		public Form()
+		public Main()
 		{
 			InitializeComponent();
 		}

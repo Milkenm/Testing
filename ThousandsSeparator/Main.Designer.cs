@@ -1,6 +1,6 @@
 ﻿namespace ThousandsSeparator
 {
-	partial class Form
+	partial class Main
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form));
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
 			this.button_format = new System.Windows.Forms.Button();
 			this.textBox_number = new System.Windows.Forms.TextBox();
 			this.textBox_formatedNumber = new System.Windows.Forms.TextBox();

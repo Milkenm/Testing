@@ -4,9 +4,9 @@ using System.Windows.Forms;
 
 namespace XmrigRegex
 {
-	public partial class Form : System.Windows.Forms.Form
+	public partial class Main : System.Windows.Forms.Form
 	{
-		public Form()
+		public Main()
 		{
 			InitializeComponent();
 		}

@@ -1,6 +1,6 @@
 ﻿namespace DivisionTest
 {
-	partial class Form
+	partial class Main
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form));
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
 			this.numeric_firstValue = new System.Windows.Forms.NumericUpDown();
 			this.numeric_secondValue = new System.Windows.Forms.NumericUpDown();
 			this.label_percentage = new System.Windows.Forms.Label();

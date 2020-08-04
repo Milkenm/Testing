@@ -1,6 +1,6 @@
 ﻿namespace GlobalExceptionCatchTest
 {
-	partial class Form
+	partial class Main
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form));
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
 			this.button_exception = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
