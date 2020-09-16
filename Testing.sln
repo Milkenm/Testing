@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.852
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing", "Testing\Testing.csproj", "{4E3728F6-6D49-4486-9C80-F603E9D655EB}"
 EndProject
@@ -26,6 +26,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTesting1", "UnitTesting1\UnitTesting1.csproj", "{2430968A-D2BF-402E-9E05-5838EAF3146F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTesting2", "UnitTesting2\UnitTesting2.csproj", "{FE233E10-13B9-4FD2-8287-5D655FF20BA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkBroadcastHostTesting", "NetworkBroadcastHostTesting\NetworkBroadcastHostTesting.csproj", "{F5A56695-E6A4-4730-97B1-0D6B290D57EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkBroadcastClientTesting", "NetworkBroadcastClientTesting\NetworkBroadcastClientTesting.csproj", "{F3BD7E04-9D4D-4D68-B4F9-3D7751A2B7DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +85,14 @@ Global
 		{FE233E10-13B9-4FD2-8287-5D655FF20BA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE233E10-13B9-4FD2-8287-5D655FF20BA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE233E10-13B9-4FD2-8287-5D655FF20BA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5A56695-E6A4-4730-97B1-0D6B290D57EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5A56695-E6A4-4730-97B1-0D6B290D57EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5A56695-E6A4-4730-97B1-0D6B290D57EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5A56695-E6A4-4730-97B1-0D6B290D57EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3BD7E04-9D4D-4D68-B4F9-3D7751A2B7DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3BD7E04-9D4D-4D68-B4F9-3D7751A2B7DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3BD7E04-9D4D-4D68-B4F9-3D7751A2B7DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3BD7E04-9D4D-4D68-B4F9-3D7751A2B7DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
