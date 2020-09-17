@@ -1,29 +1,43 @@
 ﻿using System;
+using System.Net;
 using System.Net.Sockets;
-
-using static ScriptsLib.Network.Packets;
+using System.Text;
 
 namespace NetworkBroadcast.HostTesting
 {
     internal static class NetworkHost
     {
-        public static void Main()
+        private const int listenPort = 11000;
+
+        private static void StartListener()
         {
+            UdpClient listener = new UdpClient(listenPort);
+            IPEndPoint groupEP = new IPEndPoint(IPAddress.Any, listenPort);
+
             try
             {
                 while (true)
                 {
                     Console.WriteLine("Waiting for broadcast");
+                    byte[] bytes = listener.Receive(ref groupEP);
 
-                    string message = WaitUdpPacket(11000);
-
-                    Console.WriteLine($"Received: {message}");
+                    Console.WriteLine($"Received broadcast from {groupEP} :");
+                    Console.WriteLine($" {Encoding.ASCII.GetString(bytes, 0, bytes.Length)}");
                 }
             }
             catch (SocketException e)
             {
                 Console.WriteLine(e);
             }
+            finally
+            {
+                listener.Close();
+            }
+        }
+
+        public static void Main()
+        {
+            StartListener();
         }
     }
 }

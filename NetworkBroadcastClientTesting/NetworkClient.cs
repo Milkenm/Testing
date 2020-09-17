@@ -11,21 +11,14 @@ namespace NetworkBroadcastClientTesting
         {
             Socket s = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
 
-            IPAddress broadcast = IPAddress.Parse("216.58.201.163"); // google.pt
+            IPAddress broadcast = IPAddress.Parse("193.126.179.121"); // google.pt
 
-            string sendString = "";
-            for (int i = 0; i < 10000; i++)
-            {
-                sendString = sendString + "z";
-            }
+            string sendString = "teste";
 
             byte[] sendbuf = Encoding.ASCII.GetBytes(sendString);
             IPEndPoint ep = new IPEndPoint(broadcast, 11000);
 
-            while (true)
-            {
-                s.SendTo(sendbuf, ep);
-            }
+            s.SendTo(sendbuf, ep);
 
             Console.WriteLine("Message sent to the broadcast address");
         }
