@@ -1,18 +1,14 @@
 ﻿using Newtonsoft.Json;
 
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace JsonTesting
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             string file = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + @"\json.json";
 
@@ -27,7 +23,7 @@ namespace JsonTesting
                 Console.WriteLine(config2.value2);
             }
         }
-        
+
         private class Config
         {
             public string value1 = "default";
