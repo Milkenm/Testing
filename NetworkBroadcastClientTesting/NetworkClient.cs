@@ -11,7 +11,7 @@ namespace NetworkBroadcastClientTesting
         {
             Socket s = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
 
-            IPAddress broadcast = IPAddress.Parse("193.126.179.121"); // google.pt
+            IPAddress broadcast = IPAddress.Parse("192.168.1.255");
 
             string sendString = "teste";
 
