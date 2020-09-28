@@ -1,0 +1,7 @@
+TIMINGS (1000 records)
+
+SQLite INSERT: 11s (11939ms)
+SQLite SELECT: 0s (8ms)
+
+DataTable INSERT: 0s (0ms)
+DataTable SELECT: 0s (2ms)
