@@ -20,8 +20,18 @@ public class PlayerController : MonoBehaviour
 
 	private void FixedUpdate()
 	{
-		float moveHorizontal = Input.GetAxis("Horizontal");
-		float moveVertical = Input.GetAxis("Vertical");
+		float moveHorizontal = 0;
+		float moveVertical = 0;
+		if (Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.WindowsEditor)
+		{
+			moveHorizontal = Input.GetAxis("Horizontal");
+			moveVertical = Input.GetAxis("Vertical");
+		}
+		else if (Application.platform == RuntimePlatform.Android)
+		{
+			moveHorizontal = Input.acceleration.x;
+			moveVertical = Input.acceleration.y;
+		}
 
 		Vector2 movement = new Vector2(moveHorizontal, moveVertical);
 		rb2d.AddForce(movement * speed);
