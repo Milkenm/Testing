@@ -262,20 +262,20 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Milkenm/Projects/Testing/UnityTesting/2D UFO Tutorial/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Milkenm/Projects/Testing/UnityTesting/2D UFO Tutorial/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+    <Reference Include="UnityEditor.Advertisements">
+      <HintPath>C:/Milkenm/Projects/Testing/UnityTesting/2D UFO Tutorial/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>C:/Milkenm/Projects/Testing/UnityTesting/2D UFO Tutorial/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>C:/Milkenm/Projects/Testing/UnityTesting/2D UFO Tutorial/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Tracker">
+      <HintPath>C:/Milkenm/Projects/Testing/UnityTesting/2D UFO Tutorial/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.Purchasing">
       <HintPath>C:/Milkenm/Projects/Testing/UnityTesting/2D UFO Tutorial/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.Advertisements">
-      <HintPath>C:/Milkenm/Projects/Testing/UnityTesting/2D UFO Tutorial/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>C:/Milkenm/Projects/Testing/UnityTesting/2D UFO Tutorial/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
@@ -715,14 +715,14 @@
     <Reference Include="Unity.2D.Common.Editor">
       <HintPath>C:/Milkenm/Projects/Testing/UnityTesting/2D UFO Tutorial/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Analytics.DataPrivacy">
+      <HintPath>C:/Milkenm/Projects/Testing/UnityTesting/2D UFO Tutorial/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.InternalAPIEditorBridge.001">
       <HintPath>C:/Milkenm/Projects/Testing/UnityTesting/2D UFO Tutorial/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Milkenm/Projects/Testing/UnityTesting/2D UFO Tutorial/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Milkenm/Projects/Testing/UnityTesting/2D UFO Tutorial/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
