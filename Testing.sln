@@ -49,11 +49,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTesting", "UnitTesting"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTableSerialize", "DataTableSerialize\DataTableSerialize.csproj", "{C34A34D2-8AD0-438C-B154-5D62A55428D9}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Diamond Bot", "Diamond Bot", "{3540374B-81FB-4B00-8BC6-92DCFE540823}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DiamondBot", "DiamondBot", "{3540374B-81FB-4B00-8BC6-92DCFE540823}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiamondDataTableSavingTesting", "DiamondDataTableSavingTesting\DiamondDataTableSavingTesting.csproj", "{D8BFBD2F-3A67-47DA-870E-E656BF57EE6F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CpuUsage", "CpuUsage\CpuUsage.csproj", "{E9A8FD66-20BD-434B-A877-57291F7963E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sockets", "Sockets", "{3C319D0E-D86A-4F1D-8443-94D66B800C15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerTesting", "ServerTesting\ServerTesting.csproj", "{B81DED65-0E0A-422D-A33D-22451EE912B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -249,6 +253,18 @@ Global
 		{E9A8FD66-20BD-434B-A877-57291F7963E8}.Release|x64.Build.0 = Release|Any CPU
 		{E9A8FD66-20BD-434B-A877-57291F7963E8}.Release|x86.ActiveCfg = Release|Any CPU
 		{E9A8FD66-20BD-434B-A877-57291F7963E8}.Release|x86.Build.0 = Release|Any CPU
+		{B81DED65-0E0A-422D-A33D-22451EE912B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B81DED65-0E0A-422D-A33D-22451EE912B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B81DED65-0E0A-422D-A33D-22451EE912B3}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B81DED65-0E0A-422D-A33D-22451EE912B3}.Debug|x64.Build.0 = Debug|Any CPU
+		{B81DED65-0E0A-422D-A33D-22451EE912B3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B81DED65-0E0A-422D-A33D-22451EE912B3}.Debug|x86.Build.0 = Debug|Any CPU
+		{B81DED65-0E0A-422D-A33D-22451EE912B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B81DED65-0E0A-422D-A33D-22451EE912B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B81DED65-0E0A-422D-A33D-22451EE912B3}.Release|x64.ActiveCfg = Release|Any CPU
+		{B81DED65-0E0A-422D-A33D-22451EE912B3}.Release|x64.Build.0 = Release|Any CPU
+		{B81DED65-0E0A-422D-A33D-22451EE912B3}.Release|x86.ActiveCfg = Release|Any CPU
+		{B81DED65-0E0A-422D-A33D-22451EE912B3}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -266,6 +282,7 @@ Global
 		{138C7728-5170-40E9-BF58-B74A5BFBE7E3} = {E2D216CC-DCCC-41AD-A9C8-15253BAEDFA6}
 		{C34A34D2-8AD0-438C-B154-5D62A55428D9} = {E2D216CC-DCCC-41AD-A9C8-15253BAEDFA6}
 		{D8BFBD2F-3A67-47DA-870E-E656BF57EE6F} = {3540374B-81FB-4B00-8BC6-92DCFE540823}
+		{B81DED65-0E0A-422D-A33D-22451EE912B3} = {3C319D0E-D86A-4F1D-8443-94D66B800C15}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {21EFBBCD-AFB6-4CA9-9AEE-1CE76394D8C4}
