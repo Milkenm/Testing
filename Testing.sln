@@ -61,6 +61,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerTesting", "ServerTest
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpClientAndListener", "TcpClientAndListener\TcpClientAndListener.csproj", "{884A5838-E135-472A-8201-EFB185C7E25F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormResizeTesting", "FormResizeTesting\FormResizeTesting.csproj", "{67F9A31E-33EE-4F65-B344-0B2150393D52}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -279,6 +281,18 @@ Global
 		{884A5838-E135-472A-8201-EFB185C7E25F}.Release|x64.Build.0 = Release|Any CPU
 		{884A5838-E135-472A-8201-EFB185C7E25F}.Release|x86.ActiveCfg = Release|Any CPU
 		{884A5838-E135-472A-8201-EFB185C7E25F}.Release|x86.Build.0 = Release|Any CPU
+		{67F9A31E-33EE-4F65-B344-0B2150393D52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67F9A31E-33EE-4F65-B344-0B2150393D52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67F9A31E-33EE-4F65-B344-0B2150393D52}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{67F9A31E-33EE-4F65-B344-0B2150393D52}.Debug|x64.Build.0 = Debug|Any CPU
+		{67F9A31E-33EE-4F65-B344-0B2150393D52}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{67F9A31E-33EE-4F65-B344-0B2150393D52}.Debug|x86.Build.0 = Debug|Any CPU
+		{67F9A31E-33EE-4F65-B344-0B2150393D52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67F9A31E-33EE-4F65-B344-0B2150393D52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67F9A31E-33EE-4F65-B344-0B2150393D52}.Release|x64.ActiveCfg = Release|Any CPU
+		{67F9A31E-33EE-4F65-B344-0B2150393D52}.Release|x64.Build.0 = Release|Any CPU
+		{67F9A31E-33EE-4F65-B344-0B2150393D52}.Release|x86.ActiveCfg = Release|Any CPU
+		{67F9A31E-33EE-4F65-B344-0B2150393D52}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
