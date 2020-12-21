@@ -1,27 +1,37 @@
-﻿using System.Net;
+﻿using System.Collections.Generic;
+using System.Net;
 using System.Net.Sockets;
 using System.Threading.Tasks;
 
 namespace TcpClientAndListener
 {
-	internal class Server
+	internal class TcpServer
 	{
-		public Server(short port)
+		public TcpServer(IPEndPoint localEP)
 		{
-			IPEndPoint ep = new IPEndPoint(IPAddress.Any, port);
-
-			server = new TcpListener(ep);
-			server.Start();
+			Initialize(localEP);
 		}
 
-		private readonly TcpListener server;
+		public TcpServer(short port)
+		{
+			IPEndPoint localEP = new IPEndPoint(IPAddress.Any, port);
+			Initialize(localEP);
+		}
 
-		public delegate void ConnectionEvent();
+		private void Initialize(IPEndPoint localEP)
+		{
+			Server = new TcpListener(localEP);
+			Server.Start();
+		}
+
+		private TcpListener Server;
+
+		public delegate void ConnectionEvent(Socket client);
 		public event ConnectionEvent OnClientConnected;
 		public event ConnectionEvent OnClientDisconnected;
 
-		public delegate void DataReceived(EndPoint source, byte[] data);
-		public event DataReceived OnDataReceived;
+		public delegate void DataEvent(EndPoint source, byte[] data);
+		public event DataEvent OnDataReceived;
 
 		public void Start()
 		{
@@ -30,13 +40,13 @@ namespace TcpClientAndListener
 
 		private async Task AcceptClientsAsync()
 		{
-			await Task.Run(() =>
+			while (true)
 			{
-				while (true)
+				await Task.Run(() =>
 				{
 					ClientProcess();
-				}
-			}).ConfigureAwait(false);
+				}).ConfigureAwait(false);
+			}
 		}
 
 		// https://stackoverflow.com/a/11664073
@@ -45,9 +55,8 @@ namespace TcpClientAndListener
 			Socket socket;
 			try
 			{
-				socket = await server.AcceptSocketAsync().ConfigureAwait(false);
-				OnClientConnected?.Invoke();
-				socket.ReceiveTimeout = 20000;
+				socket = await Server.AcceptSocketAsync().ConfigureAwait(false);
+				ClientConnected(socket);
 			}
 			catch
 			{
@@ -68,7 +77,7 @@ namespace TcpClientAndListener
 					break;
 				}
 
-				if (read > 0) // HANDLE RECEIVED DATA
+				if (read > 0)
 				{
 					OnDataReceived?.Invoke(socket.RemoteEndPoint, buffer);
 				}
@@ -78,8 +87,23 @@ namespace TcpClientAndListener
 				}
 			}
 
+			ClientDisconnected(socket);
+		}
+
+		private readonly List<Socket> ConnectedClients = new List<Socket>();
+
+		private void ClientConnected(Socket socket)
+		{
+			socket.ReceiveTimeout = 20000;
+			OnClientConnected?.Invoke(socket);
+			ConnectedClients.Add(socket);
+		}
+
+		private void ClientDisconnected(Socket socket)
+		{
 			socket?.Close(5000);
-			OnClientDisconnected?.Invoke();
+			OnClientDisconnected?.Invoke(socket);
+			ConnectedClients.Remove(socket);
 		}
 	}
 }

@@ -8,11 +8,10 @@ namespace TcpClientAndListener
 {
 	public partial class Main : Form
 	{
+		private static readonly Client client = new Client();
+
 		private static readonly short port = 6903;
 		private static readonly IPEndPoint serverEp = new IPEndPoint(IPAddress.Parse("127.0.0.1"), port);
-
-		private TcpClient client = new TcpClient();
-
 
 		public Main()
 		{
@@ -23,9 +22,9 @@ namespace TcpClientAndListener
 
 		private void Main_Load(object sender, EventArgs e)
 		{
-			Server server = new Server(port);
-			server.OnClientConnected += S_OnClientConnected;
-			server.OnClientDisconnected += S_OnClientDisconnected;
+			TcpServer server = new TcpServer(port);
+			server.OnClientConnected += TcpServer_OnClientConnected;
+			server.OnClientDisconnected += TcpServer_OnClientDisconnected;
 			server.OnDataReceived += S_OnDataReceived;
 			server.Start();
 		}
@@ -36,14 +35,14 @@ namespace TcpClientAndListener
 			listBox_listener.Items.Add($"Received data from '{source}': {dataString}");
 		}
 
-		private void S_OnClientDisconnected()
-		{
-			listBox_listener.Items.Add("[-] Client disconnected.");
-		}
-
-		private void S_OnClientConnected()
+		private void TcpServer_OnClientConnected(Socket client)
 		{
 			listBox_listener.Items.Add("[+] Client connected.");
+		}
+
+		private void TcpServer_OnClientDisconnected(Socket client)
+		{
+			listBox_listener.Items.Add("[-] Client disconnected.");
 		}
 
 		private void button_connect_Click(object sender, EventArgs e)
@@ -60,15 +59,13 @@ namespace TcpClientAndListener
 				button_connect.Text = "Connect";
 				button_sendPacket.Enabled = false;
 
-				client = new TcpClient();
+				client.Disconnect();
 			}
 		}
 
 		private void button_sendPacket_Click(object sender, EventArgs e)
 		{
-			byte[] result = Encoding.ASCII.GetBytes("kek");
-
-			client.GetStream().Write(result, 0, result.Length);
+			client.SendString("kek");
 		}
 	}
 }
