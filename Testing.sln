@@ -65,6 +65,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormResizeTesting", "FormRe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceProviderTesting", "ServiceProviderTesting\ServiceProviderTesting.csproj", "{8B2C2D12-CF27-4991-80E7-9CCD99779C6A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteamOpenIDLogin", "SteamOpenIDLogin\SteamOpenIDLogin.csproj", "{684F82D5-BEF3-4A8E-A9B2-B9E46CDBB3AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -307,6 +309,18 @@ Global
 		{8B2C2D12-CF27-4991-80E7-9CCD99779C6A}.Release|x64.Build.0 = Release|Any CPU
 		{8B2C2D12-CF27-4991-80E7-9CCD99779C6A}.Release|x86.ActiveCfg = Release|Any CPU
 		{8B2C2D12-CF27-4991-80E7-9CCD99779C6A}.Release|x86.Build.0 = Release|Any CPU
+		{684F82D5-BEF3-4A8E-A9B2-B9E46CDBB3AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{684F82D5-BEF3-4A8E-A9B2-B9E46CDBB3AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{684F82D5-BEF3-4A8E-A9B2-B9E46CDBB3AA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{684F82D5-BEF3-4A8E-A9B2-B9E46CDBB3AA}.Debug|x64.Build.0 = Debug|Any CPU
+		{684F82D5-BEF3-4A8E-A9B2-B9E46CDBB3AA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{684F82D5-BEF3-4A8E-A9B2-B9E46CDBB3AA}.Debug|x86.Build.0 = Debug|Any CPU
+		{684F82D5-BEF3-4A8E-A9B2-B9E46CDBB3AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{684F82D5-BEF3-4A8E-A9B2-B9E46CDBB3AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{684F82D5-BEF3-4A8E-A9B2-B9E46CDBB3AA}.Release|x64.ActiveCfg = Release|Any CPU
+		{684F82D5-BEF3-4A8E-A9B2-B9E46CDBB3AA}.Release|x64.Build.0 = Release|Any CPU
+		{684F82D5-BEF3-4A8E-A9B2-B9E46CDBB3AA}.Release|x86.ActiveCfg = Release|Any CPU
+		{684F82D5-BEF3-4A8E-A9B2-B9E46CDBB3AA}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
