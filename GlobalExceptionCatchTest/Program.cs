@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace GlobalExceptionCatchTest
@@ -13,17 +12,17 @@ namespace GlobalExceptionCatchTest
 		private static void Main()
 		{
 			Application.SetUnhandledExceptionMode(UnhandledExceptionMode.CatchException);
-			Application.ThreadException += (s, e) => GlobalException();
-			AppDomain.CurrentDomain.UnhandledException += (s, e) => GlobalException();
+			Application.ThreadException += (s, e) => GlobalException(e.Exception.Message);
+			AppDomain.CurrentDomain.UnhandledException += (s, e) => GlobalException(e.ExceptionObject.ToString());
 
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
 			Application.Run(new Main());
 		}
 
-		private static void GlobalException()
+		private static void GlobalException(string exception)
 		{
-			MessageBox.Show("Exception");
+			MessageBox.Show("Exception: " + exception);
 		}
 	}
 }
