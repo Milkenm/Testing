@@ -83,6 +83,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StaticInstancesTest", "Stat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeZonesTesting", "TimeZonesTesting\TimeZonesTesting.csproj", "{B739F9BA-A325-458B-B682-23C9E0859EC8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstanceTesting", "InstanceTesting\InstanceTesting.csproj", "{139FBC84-521C-4728-B500-0E2E507EE21C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -421,6 +423,18 @@ Global
 		{B739F9BA-A325-458B-B682-23C9E0859EC8}.Release|x64.Build.0 = Release|Any CPU
 		{B739F9BA-A325-458B-B682-23C9E0859EC8}.Release|x86.ActiveCfg = Release|Any CPU
 		{B739F9BA-A325-458B-B682-23C9E0859EC8}.Release|x86.Build.0 = Release|Any CPU
+		{139FBC84-521C-4728-B500-0E2E507EE21C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{139FBC84-521C-4728-B500-0E2E507EE21C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{139FBC84-521C-4728-B500-0E2E507EE21C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{139FBC84-521C-4728-B500-0E2E507EE21C}.Debug|x64.Build.0 = Debug|Any CPU
+		{139FBC84-521C-4728-B500-0E2E507EE21C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{139FBC84-521C-4728-B500-0E2E507EE21C}.Debug|x86.Build.0 = Debug|Any CPU
+		{139FBC84-521C-4728-B500-0E2E507EE21C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{139FBC84-521C-4728-B500-0E2E507EE21C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{139FBC84-521C-4728-B500-0E2E507EE21C}.Release|x64.ActiveCfg = Release|Any CPU
+		{139FBC84-521C-4728-B500-0E2E507EE21C}.Release|x64.Build.0 = Release|Any CPU
+		{139FBC84-521C-4728-B500-0E2E507EE21C}.Release|x86.ActiveCfg = Release|Any CPU
+		{139FBC84-521C-4728-B500-0E2E507EE21C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
