@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30503.244
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing", "Testing\Testing.csproj", "{4E3728F6-6D49-4486-9C80-F603E9D655EB}"
 EndProject
@@ -73,23 +73,25 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DetectWindowMinimize", "Det
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "XMRig", "XMRig", "{57F9217E-1670-4CFB-9ABE-902A1CCD0B48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMRigRPCTesting", "XMRigRPCTesting\XMRigRPCTesting.csproj", "{8EEF48E2-4EE7-464A-8023-14B2326158D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XMRigRPCTesting", "XMRigRPCTesting\XMRigRPCTesting.csproj", "{8EEF48E2-4EE7-464A-8023-14B2326158D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceProviderTesting2", "ServiceProviderTesting2\ServiceProviderTesting2.csproj", "{0E4BAB96-A97A-4029-BFF2-ADCEB844033A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceProviderTesting2", "ServiceProviderTesting2\ServiceProviderTesting2.csproj", "{0E4BAB96-A97A-4029-BFF2-ADCEB844033A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceProviderTesting3", "ServiceProviderTesting3\ServiceProviderTesting3.csproj", "{67473735-95B7-47C0-ABE4-F07F854A3067}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceProviderTesting3", "ServiceProviderTesting3\ServiceProviderTesting3.csproj", "{67473735-95B7-47C0-ABE4-F07F854A3067}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StaticInstancesTest", "StaticInstancesTest\StaticInstancesTest.csproj", "{FBB44F52-1BBB-4FEA-9B10-178DD5C239DF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeZonesTesting", "TimeZonesTesting\TimeZonesTesting.csproj", "{B739F9BA-A325-458B-B682-23C9E0859EC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstanceTesting", "InstanceTesting\InstanceTesting.csproj", "{139FBC84-521C-4728-B500-0E2E507EE21C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InstanceTesting", "InstanceTesting\InstanceTesting.csproj", "{139FBC84-521C-4728-B500-0E2E507EE21C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChartTest", "ChartTest\ChartTest.csproj", "{C6F9149E-7E26-438D-A404-BD044B188657}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChartTestWpf", "ChartTestWpf\ChartTestWpf.csproj", "{6083B24F-02E8-43B6-BBF2-CA9FC3B66221}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpListenerTest", "HttpListenerTest\HttpListenerTest.csproj", "{FCCB1C44-7811-4F7C-944E-099E99A78321}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpListenerTest", "HttpListenerTest\HttpListenerTest.csproj", "{FCCB1C44-7811-4F7C-944E-099E99A78321}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageToBase64", "ImageToBase64\ImageToBase64.csproj", "{02459B0A-C251-46C8-9C1C-C695B46451EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -477,6 +479,18 @@ Global
 		{FCCB1C44-7811-4F7C-944E-099E99A78321}.Release|x64.Build.0 = Release|Any CPU
 		{FCCB1C44-7811-4F7C-944E-099E99A78321}.Release|x86.ActiveCfg = Release|Any CPU
 		{FCCB1C44-7811-4F7C-944E-099E99A78321}.Release|x86.Build.0 = Release|Any CPU
+		{02459B0A-C251-46C8-9C1C-C695B46451EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02459B0A-C251-46C8-9C1C-C695B46451EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02459B0A-C251-46C8-9C1C-C695B46451EF}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{02459B0A-C251-46C8-9C1C-C695B46451EF}.Debug|x64.Build.0 = Debug|Any CPU
+		{02459B0A-C251-46C8-9C1C-C695B46451EF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{02459B0A-C251-46C8-9C1C-C695B46451EF}.Debug|x86.Build.0 = Debug|Any CPU
+		{02459B0A-C251-46C8-9C1C-C695B46451EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02459B0A-C251-46C8-9C1C-C695B46451EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02459B0A-C251-46C8-9C1C-C695B46451EF}.Release|x64.ActiveCfg = Release|Any CPU
+		{02459B0A-C251-46C8-9C1C-C695B46451EF}.Release|x64.Build.0 = Release|Any CPU
+		{02459B0A-C251-46C8-9C1C-C695B46451EF}.Release|x86.ActiveCfg = Release|Any CPU
+		{02459B0A-C251-46C8-9C1C-C695B46451EF}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
