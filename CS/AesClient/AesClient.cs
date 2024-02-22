@@ -1,10 +1,14 @@
 ﻿using System.Net.Sockets;
 using System.Text;
 
-internal class Program
+internal class AesClient
 {
 	public static void Main(string[] args)
 	{
+		SecureClient sc = new SecureClient();
+		sc.Start();
+
+		return;
 		Console.WriteLine("Enter message: ");
 		string message = Console.ReadLine();
 		StartClient(message);

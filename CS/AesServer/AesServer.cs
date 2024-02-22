@@ -2,11 +2,12 @@
 using System.Net;
 using System.Text;
 
-internal class Program
+internal class AesServer
 {
 	public static void Main(string[] args)
 	{
-		StartServer();
+		SecureServer ss = new SecureServer();
+		ss.Start();
 	}
 
 	public static void StartServer()
