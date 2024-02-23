@@ -14,42 +14,59 @@ public class SecureServer
 
 	public SecureServer()
 	{
-		rsa = RSA.Create(2048); // Create an RSA key pair
+		// Create an RSA key pair
+		rsa = RSA.Create(4096);
 	}
 
 	public void Start()
 	{
-		var listener = new TcpListener(IPAddress.Loopback, 5000);
+		TcpListener? listener = new TcpListener(IPAddress.Loopback, 5000);
 		listener.Start();
 		Console.WriteLine("Server listening...");
 
-		using (var client = listener.AcceptTcpClient())
-		using (var stream = client.GetStream())
+		using (TcpClient? client = listener.AcceptTcpClient())
+		using (NetworkStream? stream = client.GetStream())
 		{
 			// Send public key to client
-			var publicKey = rsa.ExportParameters(false);
-			var publicKeyString = Convert.ToBase64String(rsa.ExportRSAPublicKey());
-			var publicKeyBytes = Encoding.UTF8.GetBytes(publicKeyString);
-			stream.Write(publicKeyBytes, 0, publicKeyBytes.Length);
-			Console.WriteLine("Sent public key to client");
+			SendPublicKey(stream);
 
 			// Wait for client to send encrypted AES key and IV
-			var buffer = new byte[2048];
-			var bytesRead = stream.Read(buffer, 0, buffer.Length);
-			var encryptedKeyIv = new byte[bytesRead];
-			Array.Copy(buffer, encryptedKeyIv, bytesRead);
-			Console.WriteLine("Received encrypted AES key and IV from client");
+			byte[] encryptedKeyIv = ReceiveAESKeyAndIV(stream);
 
 			// Decrypt AES key and IV
-			var decryptedKeyIv = rsa.Decrypt(encryptedKeyIv, RSAEncryptionPadding.OaepSHA256);
-			// Assuming first 32 bytes are key, next 16 bytes are IV
-			var aesKey = new byte[32];
-			var aesIv = new byte[16];
-			Array.Copy(decryptedKeyIv, 0, aesKey, 0, 32);
-			Array.Copy(decryptedKeyIv, 32, aesIv, 0, 16);
+			DecryptAES(encryptedKeyIv);
 
 			Console.WriteLine("Secure channel established");
 			// Proceed with AES-encrypted communication...
 		}
+	}
+
+	private void DecryptAES(byte[] encryptedKeyIv)
+	{
+		byte[]? decryptedKeyIv = rsa.Decrypt(encryptedKeyIv, RSAEncryptionPadding.OaepSHA256);
+		// Assuming first 32 bytes are key, next 16 bytes are IV
+		byte[]? aesKey = new byte[32];
+		byte[]? aesIv = new byte[16];
+		Array.Copy(decryptedKeyIv, 0, aesKey, 0, 32);
+		Array.Copy(decryptedKeyIv, 32, aesIv, 0, 16);
+	}
+
+	private static byte[] ReceiveAESKeyAndIV(NetworkStream stream)
+	{
+		byte[]? buffer = new byte[2048];
+		int bytesRead = stream.Read(buffer, 0, buffer.Length);
+		byte[]? encryptedKeyIv = new byte[bytesRead];
+		Array.Copy(buffer, encryptedKeyIv, bytesRead);
+		Console.WriteLine("Received encrypted AES key and IV from client");
+		return encryptedKeyIv;
+	}
+
+	private void SendPublicKey(NetworkStream stream)
+	{
+		RSAParameters publicKey = rsa.ExportParameters(false);
+		string? publicKeyString = Convert.ToBase64String(rsa.ExportRSAPublicKey());
+		byte[]? publicKeyBytes = Encoding.UTF8.GetBytes(publicKeyString);
+		stream.Write(publicKeyBytes, 0, publicKeyBytes.Length);
+		Console.WriteLine("Sent public key to client");
 	}
 }
