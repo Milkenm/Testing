@@ -1,0 +1,5 @@
+name: TestPlugin
+version: '${project.version}'
+main: net.milkenm.testplugin.TestPlugin
+api-version: '1.20'
+load: STARTUP

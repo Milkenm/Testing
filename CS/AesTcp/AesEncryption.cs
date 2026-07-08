@@ -26,7 +26,7 @@ public static class AesEncryption
 	private static byte[] Key = Convert.FromBase64String("xf53Umj9pofV9fyHXj/yZcuC7I5BCXlYkHwmMTjuvMw=");
 	private static byte[] IV = Convert.FromBase64String("fAeSVg3uvPJvNBH+Vm1GSA==");
 
-	public static string Encrypt(string plainText)
+	public static string Encrypt(string text)
 	{
 		using (Aes aesAlg = Aes.Create())
 		{
@@ -40,7 +40,7 @@ public static class AesEncryption
 				{
 					using (StreamWriter swEncrypt = new StreamWriter(csEncrypt))
 					{
-						swEncrypt.Write(plainText);
+						swEncrypt.Write(text);
 					}
 				}
 				return Convert.ToBase64String(msEncrypt.ToArray());
@@ -48,7 +48,7 @@ public static class AesEncryption
 		}
 	}
 
-	public static string Decrypt(string cipherText)
+	public static string Decrypt(string encryptedText)
 	{
 		using (Aes aesAlg = Aes.Create())
 		{
@@ -56,7 +56,7 @@ public static class AesEncryption
 			aesAlg.IV = IV;
 
 			ICryptoTransform decryptor = aesAlg.CreateDecryptor(aesAlg.Key, aesAlg.IV);
-			using (MemoryStream msDecrypt = new MemoryStream(Convert.FromBase64String(cipherText)))
+			using (MemoryStream msDecrypt = new MemoryStream(Convert.FromBase64String(encryptedText)))
 			{
 				using (CryptoStream csDecrypt = new CryptoStream(msDecrypt, decryptor, CryptoStreamMode.Read))
 				{

@@ -1,0 +1,14 @@
+net\milkenm\testplugin\bossbar\TestWardenBar.class
+net\milkenm\testplugin\gui\TestGui.class
+net\milkenm\testplugin\gui\TestGuiUnstealable.class
+net\milkenm\testplugin\chunks\TestTeleportToWorld.class
+net\milkenm\testplugin\bossbar\TestCommand.class
+net\milkenm\testplugin\TestInfiniteArrow.class
+net\milkenm\testplugin\commands\TestCommandA.class
+net\milkenm\testplugin\gui\TestGui$1.class
+net\milkenm\testplugin\TestPlugin.class
+net\milkenm\testplugin\gui\PagedGui$1.class
+net\milkenm\testplugin\chunks\TestChunkGenCommand.class
+net\milkenm\testplugin\bossbar\TestWardenBar$1.class
+net\milkenm\testplugin\chunks\TestChunkGenerator.class
+net\milkenm\testplugin\gui\PagedGui.class

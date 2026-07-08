@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1e38bc05-f327-4dd7-a187-df0f0bb1c1e7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../MultiversionSupportTest/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MultiversionSupportTest/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MultiversionSupportTest/.idea/discord.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MultiversionSupportTest/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MultiversionSupportTest/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MultiversionSupportTest/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MultiversionSupportTest/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MultiversionSupportTest/common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MultiversionSupportTest/common/src/main/java/net/milkenm/multiversiontest/IMessageBroadcaster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MultiversionSupportTest/core.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MultiversionSupportTest/core/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MultiversionSupportTest/core/src/main/java/net/milkenm/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MultiversionSupportTest/plugin.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MultiversionSupportTest/plugin/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MultiversionSupportTest/plugin/src/main/java/net/milkenm/multiversiontest/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MultiversionSupportTest/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MultiversionSupportTest/version1_19.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MultiversionSupportTest/version1_19/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MultiversionSupportTest/version1_19/src/main/java/net/milkenm/multiversiontest/MessageBroadcast1_19.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MultiversionSupportTest/version1_20.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MultiversionSupportTest/version1_20/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MultiversionSupportTest/version1_20/src/main/java/net/milkenm/multiversiontest/MessageBroadcast1_20.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependency-reduced-pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/milkenm/testplugin/TestInfiniteArrow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/milkenm/testplugin/TestPlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/milkenm/testplugin/bossbar/TestCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/milkenm/testplugin/bossbar/TestWardenBar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/milkenm/testplugin/chunks/TestChunkGenCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/milkenm/testplugin/chunks/TestChunkGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/milkenm/testplugin/chunks/TestTeleportToWorld.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/milkenm/testplugin/commands/TestCommandA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/milkenm/testplugin/gui/TestGui.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/milkenm/testplugin/gui/TestGuiUnstealable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/paper-plugin.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/net/milkenm/testplugin/TestInfiniteArrow.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/net/milkenm/testplugin/TestPlugin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/paper-plugin.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/testplugin-1.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS/AesTcp/AesEncryption.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS/AesTcp/AesEncryption.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CS/Testing.sln" beforeDir="false" afterPath="$PROJECT_DIR$/../../CS/Testing.sln" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2k5U36G06sIAgLtfZbR3PIkz1Xv" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.Package.executor": "Run",
+    "Maven.testplugin [compile].executor": "Run",
+    "Maven.testplugin [package].executor": "Run",
+    "Remote JVM Debug.Debug.executor": "Debug",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "test/papermc-tests",
+    "last_opened_file_path": "C:/Milkenm/Projects/Testing/Java/TestPlugin",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Color Scheme Font",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Maven.Package">
+    <configuration name="Package" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="package" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Debug" type="Remote">
+      <module name="testplugin" />
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <option name="AUTO_RESTART" value="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="5005" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Maven.Package" />
+      <item itemvalue="Remote JVM Debug.Debug" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1e38bc05-f327-4dd7-a187-df0f0bb1c1e7" name="Changes" comment="" />
+      <created>1722572728946</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1722572728946</updated>
+      <workItem from="1722576600750" duration="46000" />
+      <workItem from="1722576652444" duration="490000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/net/milkenm/testplugin/gui/PagedGui.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/net/milkenm/legacylib/1.0/legacylib-1.0.jar!/net/milkenm/legacylib/paper/ui/gui/PagedItemsGUIInventory.class</url>
+          <line>79</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>jar://$MAVEN_REPOSITORY$/net/milkenm/legacylib/1.0/legacylib-1.0.jar!/net/milkenm/legacylib/paper/ui/gui/PagedItemsGUIInventory.class</url>
+          <line>25</line>
+          <properties class="net.milkenm.legacylib.paper.ui.gui.PagedItemsGUIInventory" method="&lt;init&gt;">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
